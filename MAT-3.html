@@ -317,7 +317,7 @@ Web Pembelajaran Matematika<!doctype html>
 
               <div class="question">
                 <div class="soal">
-                  <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="80" rx="8" fill="#fff" stroke="#ddd"/><text x="10" y="45" font-size="12" fill="#2b4a78">Gambar 4</text></svg>
+                  <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="80" rx="8" fill="#fff" stroke="#ddd"/><text x="10" y="45" font-size="12" fill="#2b4a78"></text></svg>
                   <div class="q">4) Tentukan faktor persekutuan terbesar dari 12 dan 18<br>
                   <input type="text" id="fpb1_q4" placeholder="Jawaban..."> <button class="small-btn" onclick="checkLKPD('fpb1_q4','6','fpb1_r4')">Periksa</button>
                   <div id="fpb1_r4" class="check-key"></div></div>
@@ -778,21 +778,21 @@ Web Pembelajaran Matematika<!doctype html>
           </div>
 
           <div class="question">
-            <div><strong>4.</strong> Tentukan FPB dari 12 dan 16...</div>
+            <div><strong>4.</strong> Tentukan faktor persekutuan terbesar dari 40 dan 50...</div>
             <div class="options">
-              <label><input type="radio" name="q4" value="3">4</label>
-              <label><input type="radio" name="q4" value="6">6</label>
-              <label><input type="radio" name="q4" value="9">8</label>
+              <label><input type="radio" name="q4" value="10">20</label>
+              <label><input type="radio" name="q4" value="10">10</label>
+              <label><input type="radio" name="q4" value="15">15</label>
             </div>
             <div class="result" data-answer-for="q4"></div>
           </div>
 
           <div class="question">
-            <div><strong>5.</strong> Tentukan FPB dari 24, 36, dan 60 ...</div>
+            <div><strong>5.</strong> Tentukan faktor persekutuan terbesar dari 20, 32, dan 40...</div>
             <div class="options">
-              <label><input type="radio" name="q5" value="15">12</label>
-              <label><input type="radio" name="q5" value="5">8</label>
-              <label><input type="radio" name="q5" value="30">10</label>
+              <label><input type="radio" name="q5" value="4">4</label>
+              <label><input type="radio" name="q5" value="8">8</label>
+              <label><input type="radio" name="q5" value="6">6</label>
             </div>
             <div class="result" data-answer-for="q5"></div>
           </div>
@@ -927,11 +927,11 @@ Web Pembelajaran Matematika<!doctype html>
     </div>
 
     <div class="question">
-      <div><strong>7.</strong> Ibu akan menghias sebuah bingkai foto bundar dengan jari-jari (r) sebesar 35 cm menggunakan pita. Berapa panjang pita yang dibutuhkan Ibu untuk mengelilingi bingkai tersebut satu kali?</div>
+      <div><strong>7.</strong> Sebuah logo sekolah terdiri dari dua lingkaran sepusat (berpusat sama). Jari-jari lingkaran luar mempunyai panjang 14 cm dan jari-jari luar memiliki panjang 7 cm. Dan warna di antara kedua lingkaran akan diarsir. Hitunglah luas bagian yang diarsir?</div>
       <div class="options">
-      <label><input type="radio" name="l7" value="220"> 220 cm</label>
-      <label><input type="radio" name="l7" value="210"> 210 cm</label>
-      <label><input type="radio" name="l7" value="230"> 230 cm</label>
+      <label><input type="radio" name="l7" value="462"> 462 cm<sup>2</sup></label>
+      <label><input type="radio" name="l7" value="388"> 388 cm<sup>2</sup></label>
+      <label><input type="radio" name="l7" value="324"> 324 cm<sup>2</sup></label>
     </div>
       <div class="result" data-answer-for="l7"></div>
     </div>
@@ -1008,7 +1008,7 @@ Web Pembelajaran Matematika<!doctype html>
     }
 
     // Evaluasi auto-correct for FPB (multiple choice)
-    const answersFPB = {q1:'6', q2:'5', q3:'7', q4:'3', q5:'15', q6:'12',q7:'15', q8:'24', q9:'6', q10:'20'};
+    const answersFPB = {q1:'6', q2:'5', q3:'7', q4:'10', q5:'4', q6:'12',q7:'15', q8:'24', q9:'6', q10:'20'};
     function checkFPB(){
       const form = document.getElementById('form-fpb');
       let correct=0, total=0;
@@ -1028,7 +1028,7 @@ Web Pembelajaran Matematika<!doctype html>
     }
 
     // Evaluasi auto-correct for Lingkaran (multiple choice)
-    const answersLing = {l1:'44', l2:'78.5', l3:'88', l4:'78.5', l5:'132', l6:'1386', l7:'220', l8:'220', l9:'15700000', l10:'35'};
+    const answersLing = {l1:'44', l2:'78.5', l3:'88', l4:'78.5', l5:'132', l6:'1386', l7:'462', l8:'220', l9:'15700000', l10:'35'};
     function checkLing(){
       const form = document.getElementById('form-ling');
       let correct=0, total=0;
